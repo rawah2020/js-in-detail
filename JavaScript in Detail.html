@@ -1,0 +1,62 @@
+<!DOCTYPE html> 
+
+
+
+
+<html> 
+    
+
+<head> 
+    <title>JS in detail</title> 
+
+
+</head> 
+
+
+<body>   
+    <p id="demo1"> </p> 
+    <p id="demo2"> </p>  
+    <p id="demo3"> </p>  
+    <p id="demo4"> </p> 
+
+
+    <script>  
+    function divide (a,t) { 
+
+
+        try{ 
+
+            if (t===0) 
+        { 
+
+            throw " can't divide by 0  "; 
+            document.write("Result :", a/t);
+        }
+        } catch(error) 
+        { 
+            document.write("Provide a non zero divisor"); 
+
+        }
+    } divide(20,0) 
+
+        var x=65; 
+        var y=29; 
+        document.getElementById("demo1").innerHTML=x+y; 
+        document.getElementById("demo2").innerHTML=String(x)+String(y); 
+
+
+
+        try{ 
+
+
+            addalert("Welcome guest!")
+        } 
+        catch(err){ 
+
+
+            document.getElementById("demo4").innerHTML=err.message;
+        }
+    </script>
+</body> 
+
+</html>.
